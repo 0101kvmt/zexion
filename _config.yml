@@ -1,0 +1,8 @@
+title: Zexion Website
+baseurl: ""
+url: ""
+theme: minima
+
+# Exclude these files from the build
+exclude:
+  - README.md 

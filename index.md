@@ -1,0 +1,38 @@
+---
+layout: default
+title: Home
+---
+
+<div class="social-icons">
+  <a href="#" class="social-icon facebook">f</a>
+  <a href="#" class="social-icon twitter">t</a>
+  <a href="#" class="social-icon youtube">y</a>
+  <a href="#" class="social-icon twitch">tw</a>
+  <a href="#" class="social-icon discord">d</a>
+</div>
+
+<div class="company-logo">
+  <img src="assets/GallantLeafLogo.svg" alt="Gallant Leaf LLC" class="company-logo-img" />
+</div>
+
+<div class="welcome-section">
+  <div class="welcome-text">
+    Welcome to the website of Gallant Leaf LLC! We're a humble, new indie game dev company just founded in 2024. We're dedicated to making cool, high quality games using ideas from all generations and platforms of gaming.
+  </div>
+</div>
+
+<div class="content-section">
+  <div class="games-column">
+    <h2 class="section-title">Games</h2>
+    <div class="game-card">
+      <img src="assets/boxart.png" alt="Gallant Leaf LLC"/>
+    </div>
+  </div>
+  
+  <div class="updates-column">
+    <h2 class="section-title">Updates</h2>
+    <div class="update-text">
+      • <a href="/about/" class="highlight-link">Anouncing Zexion!</a> This epic sci-fi action-adventure is coming to <a href="#" class="highlight-link">Steam</a> early 2025!
+    </div>
+  </div>
+</div> 
