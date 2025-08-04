@@ -12,7 +12,7 @@ title: Home
 </div>
 
 <div class="company-logo">
-  <img src="assets/GallantLeafLogo.svg" alt="Gallant Leaf LLC" class="company-logo-img" />
+  <img src="{{ '/assets/GallantLeafLogo.svg' | relative_url }}" alt="Gallant Leaf LLC" class="company-logo-img" />
 </div>
 
 <div class="welcome-section">
@@ -25,14 +25,14 @@ title: Home
   <div class="games-column">
     <h2 class="section-title">Games</h2>
     <div class="game-card">
-      <img src="assets/boxart.png" alt="Gallant Leaf LLC"/>
+      <img src="{{ '/assets/boxart.png' | relative_url }}" alt="Gallant Leaf LLC"/>
     </div>
   </div>
   
   <div class="updates-column">
     <h2 class="section-title">Updates</h2>
     <div class="update-text">
-      • <a href="/about/" class="highlight-link">Anouncing Zexion!</a> This epic sci-fi action-adventure is coming to <a href="#" class="highlight-link">Steam</a> early 2025!
+      • <a href="{{ '/about/' | relative_url }}" class="highlight-link">Anouncing Zexion!</a> This epic sci-fi action-adventure is coming to <a href="https://store.steampowered.com/app/3392510/Zexion/" target="_blank" class="highlight-link">Steam</a> early 2025!
     </div>
   </div>
 </div> 

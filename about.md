@@ -5,12 +5,9 @@ permalink: /about/
 ---
 
 <div class="game-hero">
-  <h1 class="game-title">ZEXION</h1>
+  <h1 class="game-title"><img src="{{ '/assets/titlevector.svg' | relative_url }}" alt="title-vector" /></h1>
   <div class="video-player">
-    <div class="video-placeholder">
-      <div class="play-button">▶</div>
-      <div class="video-text">Game Trailer</div>
-    </div>
+    <iframe width="100%" height="400" src="https://www.youtube.com/embed/Pg1V-UDYzv0" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
   </div>
 </div>
 
@@ -40,21 +37,21 @@ permalink: /about/
   
   <div class="game-screenshots">
     <div class="screenshot">
-      <div class="screenshot-placeholder">Screenshot 1</div>
+      <div class="screenshot-placeholder"><img src="{{ '/assets/sc-1.png' | relative_url }}" alt="game-screenshot-1" /></div>
     </div>
     <div class="screenshot">
-      <div class="screenshot-placeholder">Screenshot 2</div>
+      <div class="screenshot-placeholder"><img src="{{ '/assets/sc-2.png' | relative_url }}" alt="game-screenshot-2" /></div>
     </div>
     <div class="screenshot">
-      <div class="screenshot-placeholder">Screenshot 3</div>
+      <div class="screenshot-placeholder"><img src="{{ '/assets/sc-3.png' | relative_url }}" alt="game-screenshot-3" /></div>
     </div>
     <div class="screenshot">
-      <div class="screenshot-placeholder">Screenshot 4</div>
+      <div class="screenshot-placeholder"><img src="{{ '/assets/sc-4.png' | relative_url }}" alt="game-screenshot-4" /></div>
     </div>
   </div>
 </div>
 
 <div class="game-footer">
-  <a href="/" class="return-link">Return to main page</a>
+  <a href="{{ '/' | relative_url }}" class="return-link">Return to main page</a>
   <div class="copyright">©2024 Gallant Leaf LLC. All rights reserved.</div>
 </div> 
