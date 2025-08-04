@@ -1,6 +1,6 @@
 title: Zexion Website
-baseurl: ""
-url: ""
+baseurl: "/zexion"
+url: "https://0101kvmt.github.io"
 theme: minima
 
 # Exclude these files from the build

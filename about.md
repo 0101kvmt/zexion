@@ -57,10 +57,4 @@ permalink: /about/
 <div class="game-footer">
   <a href="/" class="return-link">Return to main page</a>
   <div class="copyright">©2024 Gallant Leaf LLC. All rights reserved.</div>
-  <div class="wishlist-section">
-    <a href="#" class="wishlist-btn">
-      <span>Wishlist Zexion on Steam!</span>
-      <div class="steam-logo">S</div>
-    </a>
-  </div>
 </div> 
