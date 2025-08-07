@@ -4,11 +4,11 @@ title: Home
 ---
 
 <div class="social-icons">
-  <a href="#" class="social-icon facebook">f</a>
-  <a href="#" class="social-icon twitter">t</a>
-  <a href="#" class="social-icon youtube">y</a>
-  <a href="#" class="social-icon twitch">tw</a>
-  <a href="#" class="social-icon discord">d</a>
+  <a href="#" class="social-icon facebook"><img src="{{ '/assets/iconmonstr-facebook-4-white.svg' | relative_url }}" alt="game-screenshot-2" /></a>
+  <a href="#" class="social-icon twitter"><img src="{{ '/assets/iconmonstr-twitter-4-white.svg' | relative_url }}" alt="game-screenshot-2" /></a>
+  <a href="#" class="social-icon youtube"><img src="{{ '/assets/iconmonstr-youtube-9-white.svg' | relative_url }}" alt="game-screenshot-2" /></a>
+  <a href="#" class="social-icon twitch"><img src="{{ '/assets/iconmonstr-twitch-4-white.svg' | relative_url }}" alt="game-screenshot-2" /></a>
+  <a href="#" class="social-icon discord"><img src="{{ '/assets/iconmonstr-discord-1-white.svg' | relative_url }}" alt="game-screenshot-2" /></a>
 </div>
 
 <div class="company-logo">
