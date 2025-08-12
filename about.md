@@ -16,15 +16,16 @@ permalink: /about/
     <h2 class="game-heading">The fate of the galaxy hangs in the balance!</h2>
     
     <div class="game-description">
-      <p>In the peaceful world of Orinth, a mysterious super-matter known as ZEXION has been discovered. This powerful substance has the ability to reshape reality itself. However, its discovery has not gone unnoticed. Pirates, warlords, and horrors from beyond the stars now seek to claim ZEXION for their own nefarious purposes.</p>
-      
-      <p>As NATU, a legendary space warrior, you must journey to the remote planet Cypher-X72 to secure the ZEXION before it falls into the wrong hands. Armed with your trusty Force Blaster and Gravity Harness, you'll face countless challenges that will test your valor and cunning.</p>
-      
-      <p>But beware - the path to ZEXION is fraught with danger. Ancient guardians, treacherous terrain, and rival factions stand between you and your mission. Only those with true courage and skill will survive to claim the ultimate prize.</p>
+<p>The peaceful world of Orinth faces destruction! The power of the forbidden super-matter ZEXION may be enough to save it. But its only known location is the remote planet Cypher-X72.</p>
+
+<p>As the space warrior NATU, you must travel to Cypher-X72 to obtain ZEXION. Find high-tech items such as the force blaster and the Gravity Harness in order to navigate the labyrinthine depths of this perilous world.</p>
+
+<p>Be warned, you aren’t the only one seeking ZEXION! Devious pirates and powerful warlords seek it to further their dominance of the Galaxy. And the ancient tunnels of Cypher-X72 crawl with the kinds of horrors only spoken of in legend… You will need both valor and cunning in order to succeed in this action-packed sci-fi adventure!</p>
+
     </div>
     
     <div class="game-features">
-      <h3>Game Features:</h3>
+
       <ul>
         <li>Vast Interconnected World</li>
         <li>Tons of Strange and Cool Upgrades</li>

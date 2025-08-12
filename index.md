@@ -32,7 +32,7 @@ title: Home
   <div class="updates-column">
     <h2 class="section-title">Updates</h2>
     <div class="update-text">
-      • <a href="{{ '/about/' | relative_url }}" class="highlight-link">Anouncing Zexion!</a> This epic sci-fi action-adventure is coming to <a href="https://store.steampowered.com/app/3392510/Zexion/" target="_blank" class="highlight-link">Steam</a> early 2025!
+      • Announcing <a href="{{ '/about/' | relative_url }}" class="highlight-link">Zexion!</a> This epic sci-fi action-adventure is coming to <a href="https://store.steampowered.com/app/3392510/Zexion/" target="_blank" class="highlight-link">Steam</a> early 2025!
     </div>
   </div>
 </div> 
