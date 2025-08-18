@@ -27,6 +27,12 @@ body {
   line-height: 1.6;
 }
 
+.about-page {
+  background: url('aboutpagebackground1.jpg') no-repeat center center fixed, #000;
+  background-size: cover;
+  min-height: 100vh;
+}
+
 header {
   background: #23262f;
   padding: 2rem 0 1rem 0;
@@ -73,6 +79,16 @@ main {
   border-radius: 0;
 }
 
+/* Page-specific main styling */
+.main-about {
+  background: #000;
+  border-radius: 8px;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.3);
+}
+
+.page-about {
+  background: black;
+}
 /* Homepage Styles */
 .social-icons {
   display: flex;

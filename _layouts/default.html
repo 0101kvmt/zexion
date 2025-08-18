@@ -6,8 +6,8 @@
   <title>{{ page.title }} | {{ site.title }}</title>
   <link rel="stylesheet" href="{{ '/assets/style.css' | relative_url }}">
 </head>
-<body>
-  <main>
+<body class="page-{{ page.name | replace: '.md', '' | replace: '.html', '' }}">
+  <main class="main-{{ page.name | replace: '.md', '' | replace: '.html', '' }}">
     {{ content }}
   </main>
   <footer>

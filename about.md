@@ -4,6 +4,7 @@ title: About
 permalink: /about/
 ---
 
+<div class="about-page">
 <div class="game-hero">
   <h1 class="game-title"><img src="{{ '/assets/titlevector.svg' | relative_url }}" alt="title-vector" /></h1>
   <div class="video-player">
@@ -55,4 +56,5 @@ permalink: /about/
 <div class="game-footer">
   <a href="{{ '/' | relative_url }}" class="return-link">Return to main page</a>
   <div class="copyright">©2024 Gallant Leaf LLC. All rights reserved.</div>
+</div>
 </div> 

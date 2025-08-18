@@ -27,6 +27,12 @@ body {
   line-height: 1.6;
 }
 
+.about-page {
+  background: url('aboutpagebackground1.jpg') no-repeat center center fixed, #000;
+  background-size: cover;
+  min-height: 100vh;
+}
+
 header {
   background: #23262f;
   padding: 2rem 0 1rem 0;
@@ -67,12 +73,22 @@ nav a:hover, nav a.active {
 main {
   max-width: 1200px;
   margin: 0 auto;
-  padding: 2rem;
+  padding: 20px;
   background: transparent;
   box-shadow: none;
   border-radius: 0;
 }
 
+/* Page-specific main styling */
+.main-about {
+  background: #000;
+  border-radius: 8px;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.3);
+}
+
+.page-about {
+  background: black;
+}
 /* Homepage Styles */
 .social-icons {
   display: flex;
@@ -94,8 +110,8 @@ main {
   font-family: 'Xolonium', 'Segoe UI', Arial, sans-serif;
 }
 .social-icon img {
-  width: 60px;
-  height: 60px;
+  width: 80px;
+  height: 80px;
 }
 .social-icon:hover {
   transform: scale(1.1);
@@ -605,7 +621,7 @@ main {
 img {
   max-width: 100%;
   border-radius: 8px;
-  margin: 1.5rem 0;
+  margin: 0px;
 }
 
 footer {
