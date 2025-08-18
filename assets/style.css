@@ -110,8 +110,8 @@ main {
   font-family: 'Xolonium', 'Segoe UI', Arial, sans-serif;
 }
 .social-icon img {
-  width: 60px;
-  height: 60px;
+  width: 80px;
+  height: 80px;
 }
 .social-icon:hover {
   transform: scale(1.1);
@@ -122,7 +122,7 @@ main {
   align-items: center;
   justify-content: center;
   gap: 1rem;
-  margin-bottom: 3rem;
+  margin-bottom: 20px;
 }
 
 .logo-graphic {
@@ -621,7 +621,7 @@ main {
 img {
   max-width: 100%;
   border-radius: 8px;
-  margin: 1.5rem 0;
+  margin: 0px;
 }
 
 footer {
