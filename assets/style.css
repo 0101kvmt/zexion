@@ -110,8 +110,8 @@ main {
   font-family: 'Xolonium', 'Segoe UI', Arial, sans-serif;
 }
 .social-icon img {
-  width: 80px;
-  height: 80px;
+  width: 90px;
+  height: 90px;
 }
 .social-icon:hover {
   transform: scale(1.1);
