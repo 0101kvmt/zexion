@@ -25,7 +25,7 @@ document.addEventListener('DOMContentLoaded', function () {
   var screenshots = document.querySelectorAll('.screenshot-placeholder img');
   screenshots.forEach(function (img) {
     img.addEventListener('click', function () {
-      openLightbox(img.src, img.alt);
+      openLightbox(img.src.replace(".png", "-large.png"), img.alt);
     });
   });
 
