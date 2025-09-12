@@ -9,10 +9,11 @@
 <body class="page-{{ page.name | replace: '.md', '' | replace: '.html', '' }}">
   <main class="main-{{ page.name | replace: '.md', '' | replace: '.html', '' }}">
     {{ content }}
+    <footer>
+      &copy; {{ site.time | date: '%Y' }} {{ site.title }}. All rights reserved.
+    </footer>
   </main>
-  <footer>
-    &copy; {{ site.time | date: '%Y' }} {{ site.title }}. All rights reserved.
-  </footer>
+
   <div class="footer-steam">
     <a href="https://store.steampowered.com/app/3392510/Zexion/" target="_blank">
       <span>Wishlist Zexion on Steam!</span>
