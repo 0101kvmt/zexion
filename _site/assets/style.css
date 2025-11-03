@@ -209,12 +209,13 @@ main {
   background: none;
   border-radius: 8px;
   overflow: hidden;
-  box-shadow: 0 4px 12px rgba(0,0,0,0.3);
   text-align: center;
 }
 
 .game-card img {
   width: 150px;
+  border: 2px solid #3200b7;
+  border-radius: 0px;
 }
 
 .game-cover {
@@ -222,7 +223,7 @@ main {
   width: 100%;
   height: 300px;
   background: linear-gradient(135deg, #2a1a3a, #1a1a2e);
-  border: 3px solid #5e06d4;
+  border: 2px solid #6700d4;
   border-radius: 8px;
 }
 
@@ -233,7 +234,7 @@ main {
   font-family: 'Xolonium', 'Courier New', monospace;
   font-size: 1.5rem;
   font-weight: bold;
-  color: #5e06d4;
+  color: #6700d4;
   text-shadow: 2px 2px 0 #000;
   z-index: 10;
 }
@@ -348,7 +349,7 @@ main {
 }
 .hero-btn {
   display: inline-block;
-  background: linear-gradient(90deg, #5e06d4 0%, #48c6ef 100%);
+  background: linear-gradient(90deg, #6700d4 0%, #48c6ef 100%);
   color: #fff;
   font-size: 1.15rem;
   font-weight: 600;
@@ -362,7 +363,7 @@ main {
   font-family: 'Xolonium', 'Segoe UI', Arial, sans-serif;
 }
 .hero-btn:hover {
-  background: linear-gradient(90deg, #48c6ef 0%, #5e06d4 100%);
+  background: linear-gradient(90deg, #48c6ef 0%, #6700d4 100%);
   box-shadow: 0 4px 16px rgba(76, 70, 255, 0.18);
 }
 
@@ -386,7 +387,7 @@ main {
 .feature-icon {
   font-size: 2.5rem;
   margin-bottom: 1rem;
-  color: #5e06d4;
+  color: #6700d4;
 }
 .feature-title {
   font-size: 1.25rem;
@@ -410,7 +411,7 @@ main {
   font-family: 'Xolonium', 'Courier New', monospace;
   font-size: 4rem;
   font-weight: bold;
-  color: #5e06d4;
+  color: #6700d4;
   text-shadow: 
     2px 2px 0 #48c6ef,
     4px 4px 0 #2a2a2a;
@@ -424,11 +425,10 @@ main {
 }
 
 .video-player {
-  max-width: 510px;
+  max-width: 600px;
   margin: 0 auto;
-  border: 2px solid #5e06d4;
-    border-radius: 8px;
-  
+  border: 2px solid #6700d4;
+  border-radius: 3px;
 }
 
 .video-placeholder {
@@ -460,8 +460,6 @@ main {
 .game-content {
   display: flex;
   gap: 3rem;
-  width: 71%;
-  margin: 0 auto;
   margin-bottom: 3rem;
 }
 
@@ -470,34 +468,28 @@ main {
 }
 
 .game-heading {
-  font-size: 32px;
+  font-size: 2.2rem;
   color: #ffd700;
-  margin: 0 auto;
-  line-height: normal;
+  margin-bottom: 1.5rem;
   font-style: italic;
   font-weight: bold;
-  text-align: center;
   font-family: 'Xolonium', 'Segoe UI', Arial, sans-serif;
 }
 
 .game-description {
+  margin-bottom: 2rem;
   line-height: 1.6;
   font-family: 'Xolonium', 'Segoe UI', Arial, sans-serif;
   color: #d1d4c2;
-  padding: 0px 15%;
-  margin: 0 auto;
   font-size: 17px;
 }
 
 .game-description p {
   margin-bottom: 1rem;
 }
-.game-features {
-  margin: 0 15%;
-}
 
 .game-features h3 {
-  color: #5e06d4;
+  color: #6700d4;
   margin-bottom: 1rem;
   font-size: 1.3rem;
   font-family: 'Xolonium', 'Segoe UI', Arial, sans-serif;
@@ -531,7 +523,7 @@ main {
 }
 
 .screenshot {
-  border: 2px solid #5e06d4;
+  border: 2px solid #6700d4;
   border-radius: 8px;
   overflow: hidden;
   padding: 0;
@@ -578,7 +570,7 @@ main {
 }
 
 .return-link:hover {
-  color: #5e06d4;
+  color: #6700d4;
 }
 
 .copyright {
@@ -634,7 +626,7 @@ img {
 footer {
   text-align: center;
   color: #888;
-  padding-bottom: 50px;
+  padding: 2rem 0 1rem 0;
   font-size: 0.95rem;
   font-family: 'Xolonium', 'Segoe UI', Arial, sans-serif;
 }

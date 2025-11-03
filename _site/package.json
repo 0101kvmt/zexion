@@ -1,0 +1,31 @@
+{
+  "name": "zexion-website",
+  "version": "1.0.0",
+  "description": "Official website for Zexion game by Gallant Leaf LLC",
+  "scripts": {
+    "dev": "bundle exec jekyll serve --livereload",
+    "build": "bundle exec jekyll build",
+    "serve": "bundle exec jekyll serve",
+    "clean": "bundle exec jekyll clean",
+    "setup": "bundle install",
+    "check": "bundle exec jekyll doctor"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/yourusername/zexion.git"
+  },
+  "keywords": [
+    "jekyll",
+    "github-pages",
+    "game-website",
+    "zexion",
+    "gallant-leaf"
+  ],
+  "author": "Gallant Leaf LLC",
+  "license": "MIT",
+  "devDependencies": {},
+  "engines": {
+    "ruby": ">=2.7.0"
+  }
+}
+

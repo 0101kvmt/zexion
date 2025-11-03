@@ -1,0 +1,404 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Zexion Website - Complete Development &amp; Editing Guide | Zexion Website</title>
+  <link rel="stylesheet" href="/zexion/assets/style.css">
+</head>
+<body class="page-DEVELOPMENT_GUIDE">
+  <main class="main-DEVELOPMENT_GUIDE">
+    <article class="post">
+
+  <header class="post-header">
+    <h1 class="post-title">Zexion Website - Complete Development &amp;amp; Editing Guide</h1>
+  </header>
+
+  <div class="post-content">
+    <h1 id="zexion-website---complete-development--editing-guide">Zexion Website - Complete Development &amp; Editing Guide</h1>
+
+<p>This guide covers everything you need to know to work with the Zexion website project, from basic content editing to full local development setup.</p>
+
+<h2 id="-table-of-contents">📋 Table of Contents</h2>
+
+<ol>
+  <li><a href="#quick-start---content-editing-only">Quick Start - Content Editing Only</a></li>
+  <li><a href="#full-development-setup">Full Development Setup</a></li>
+  <li><a href="#project-structure">Project Structure</a></li>
+  <li><a href="#content-editing-guide">Content Editing Guide</a></li>
+  <li><a href="#development-workflow">Development Workflow</a></li>
+  <li><a href="#troubleshooting">Troubleshooting</a></li>
+</ol>
+
+<hr />
+
+<h2 id="-quick-start---content-editing-only">🚀 Quick Start - Content Editing Only</h2>
+
+<p>If you just want to edit content without setting up a local development environment:</p>
+
+<h3 id="prerequisites">Prerequisites</h3>
+<ul>
+  <li>A GitHub account</li>
+  <li>Access to the repository</li>
+</ul>
+
+<h3 id="steps">Steps</h3>
+<ol>
+  <li>Go to your GitHub repository: <code class="language-plaintext highlighter-rouge">https://github.com/yourusername/zexion</code></li>
+  <li>Navigate to the file you want to edit (<code class="language-plaintext highlighter-rouge">index.md</code> or <code class="language-plaintext highlighter-rouge">about.md</code>)</li>
+  <li>Click the pencil icon (✏️) to edit</li>
+  <li>Make your changes</li>
+  <li>Commit with a descriptive message</li>
+  <li>Wait 1-2 minutes for GitHub Pages to rebuild</li>
+  <li>View your changes at: <code class="language-plaintext highlighter-rouge">https://0101kvmt.github.io/zexion/</code></li>
+</ol>
+
+<p><strong>See the existing <a href="README.md">README.md</a> for detailed content editing instructions.</strong></p>
+
+<hr />
+
+<h2 id="️-full-development-setup">🛠️ Full Development Setup</h2>
+
+<p>For developers who want to work locally, test changes, and contribute to the project.</p>
+
+<h3 id="prerequisites-1">Prerequisites</h3>
+
+<h4 id="required-software">Required Software</h4>
+<ol>
+  <li><strong>Ruby</strong> (version 2.7 or higher)
+    <ul>
+      <li><strong>Windows</strong>: Download from <a href="https://rubyinstaller.org/">rubyinstaller.org</a></li>
+      <li><strong>macOS</strong>: Use Homebrew: <code class="language-plaintext highlighter-rouge">brew install ruby</code></li>
+      <li><strong>Linux</strong>: Use your package manager: <code class="language-plaintext highlighter-rouge">sudo apt install ruby-full</code> (Ubuntu/Debian)</li>
+    </ul>
+  </li>
+  <li><strong>Git</strong>
+    <ul>
+      <li><strong>Windows</strong>: Download from <a href="https://git-scm.com/">git-scm.com</a></li>
+      <li><strong>macOS</strong>: <code class="language-plaintext highlighter-rouge">brew install git</code></li>
+      <li><strong>Linux</strong>: <code class="language-plaintext highlighter-rouge">sudo apt install git</code></li>
+    </ul>
+  </li>
+  <li><strong>Bundler</strong> (Ruby gem manager)
+    <div class="language-bash highlighter-rouge"><div class="highlight"><pre class="highlight"><code>gem <span class="nb">install </span>bundler
+</code></pre></div>    </div>
+  </li>
+</ol>
+
+<h3 id="installation-steps">Installation Steps</h3>
+
+<ol>
+  <li><strong>Clone the repository</strong>
+    <div class="language-bash highlighter-rouge"><div class="highlight"><pre class="highlight"><code>git clone https://github.com/yourusername/zexion.git
+<span class="nb">cd </span>zexion
+</code></pre></div>    </div>
+  </li>
+  <li><strong>Install dependencies</strong>
+    <div class="language-bash highlighter-rouge"><div class="highlight"><pre class="highlight"><code>bundle <span class="nb">install</span>
+</code></pre></div>    </div>
+  </li>
+  <li><strong>Start the local development server</strong>
+    <div class="language-bash highlighter-rouge"><div class="highlight"><pre class="highlight"><code>bundle <span class="nb">exec </span>jekyll serve
+</code></pre></div>    </div>
+  </li>
+  <li><strong>View your site</strong>
+    <ul>
+      <li>Open your browser to: <code class="language-plaintext highlighter-rouge">http://localhost:4000/zexion/</code></li>
+      <li>The site will automatically reload when you make changes</li>
+    </ul>
+  </li>
+</ol>
+
+<h3 id="development-commands">Development Commands</h3>
+
+<div class="language-bash highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="c"># Start development server with live reload</span>
+bundle <span class="nb">exec </span>jekyll serve
+
+<span class="c"># Build the site without serving</span>
+bundle <span class="nb">exec </span>jekyll build
+
+<span class="c"># Build and serve with drafts</span>
+bundle <span class="nb">exec </span>jekyll serve <span class="nt">--drafts</span>
+
+<span class="c"># Clean and rebuild</span>
+bundle <span class="nb">exec </span>jekyll clean
+bundle <span class="nb">exec </span>jekyll build
+</code></pre></div></div>
+
+<hr />
+
+<h2 id="-project-structure">📁 Project Structure</h2>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>zexion/
+├── _config.yml              # Jekyll configuration (site settings)
+├── _layouts/
+│   └── default.html         # Main HTML template
+├── _site/                   # Generated site (don't edit directly)
+├── assets/                  # Static assets
+│   ├── style.css           # Main stylesheet
+│   ├── main.js             # JavaScript functionality
+│   ├── *.png, *.jpg        # Images
+│   ├── *.svg               # Vector graphics
+│   └── *.otf, *.ttf        # Fonts
+├── index.md                 # Homepage content
+├── about.md                 # About page content
+├── Gemfile                  # Ruby dependencies
+├── Gemfile.lock            # Locked dependency versions
+└── README.md               # Content editing guide
+</code></pre></div></div>
+
+<h3 id="key-files-explained">Key Files Explained</h3>
+
+<ul>
+  <li><strong><code class="language-plaintext highlighter-rouge">_config.yml</code></strong>: Site-wide settings (title, URL, theme, etc.)</li>
+  <li><strong><code class="language-plaintext highlighter-rouge">_layouts/default.html</code></strong>: HTML template that wraps all pages</li>
+  <li><strong><code class="language-plaintext highlighter-rouge">assets/style.css</code></strong>: All website styling and responsive design</li>
+  <li><strong><code class="language-plaintext highlighter-rouge">assets/main.js</code></strong>: JavaScript for lightbox functionality</li>
+  <li><strong><code class="language-plaintext highlighter-rouge">index.md</code></strong>: Homepage content (company intro, social links, announcements)</li>
+  <li><strong><code class="language-plaintext highlighter-rouge">about.md</code></strong>: Game details page (description, features, screenshots)</li>
+</ul>
+
+<hr />
+
+<h2 id="️-content-editing-guide">✏️ Content Editing Guide</h2>
+
+<h3 id="homepage-indexmd">Homepage (<code class="language-plaintext highlighter-rouge">index.md</code>)</h3>
+
+<p><strong>Editable sections:</strong></p>
+<ul>
+  <li>Welcome message (lines 19-21)</li>
+  <li>Social media links (lines 6-12)</li>
+  <li>Game announcements (lines 36-38)</li>
+</ul>
+
+<p><strong>Example edit:</strong></p>
+<div class="language-markdown highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"welcome-text"</span><span class="nt">&gt;</span>
+  Your new welcome message here...
+<span class="nt">&lt;/div&gt;</span>
+</code></pre></div></div>
+
+<h3 id="about-page-aboutmd">About Page (<code class="language-plaintext highlighter-rouge">about.md</code>)</h3>
+
+<p><strong>Editable sections:</strong></p>
+<ul>
+  <li>Game description paragraphs (lines 19-25)</li>
+  <li>Game features list (lines 30-37)</li>
+  <li>YouTube video embed (line 11)</li>
+</ul>
+
+<p><strong>Example edit:</strong></p>
+<div class="language-markdown highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"game-description"</span><span class="nt">&gt;</span>
+  <span class="nt">&lt;p&gt;</span>Your updated game description...<span class="nt">&lt;/p&gt;</span>
+<span class="nt">&lt;/div&gt;</span>
+</code></pre></div></div>
+
+<h3 id="adding-new-images">Adding New Images</h3>
+
+<ol>
+  <li><strong>Upload to <code class="language-plaintext highlighter-rouge">assets/</code> folder</strong></li>
+  <li><strong>Reference in content:</strong>
+    <div class="language-markdown highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="nt">&lt;img</span> <span class="na">src=</span><span class="s">"/zexion/assets/your-image.png"</span> <span class="na">alt=</span><span class="s">"Description"</span> <span class="nt">/&gt;</span>
+</code></pre></div>    </div>
+  </li>
+</ol>
+
+<h3 id="updating-links">Updating Links</h3>
+
+<p><strong>Social Media (in <code class="language-plaintext highlighter-rouge">index.md</code>):</strong></p>
+<div class="language-html highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="nt">&lt;a</span> <span class="na">href=</span><span class="s">"https://your-new-url.com"</span> <span class="na">class=</span><span class="s">"social-icon platform"</span><span class="nt">&gt;</span>
+  <span class="nt">&lt;img</span> <span class="na">src=</span><span class="s">"/zexion/assets/icon.svg"</span> <span class="na">alt=</span><span class="s">"Platform"</span> <span class="nt">/&gt;</span>
+<span class="nt">&lt;/a&gt;</span>
+</code></pre></div></div>
+
+<p><strong>Steam Link (in <code class="language-plaintext highlighter-rouge">_layouts/default.html</code>):</strong></p>
+<div class="language-html highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="nt">&lt;a</span> <span class="na">href=</span><span class="s">"https://store.steampowered.com/app/YOUR_APP_ID/"</span> <span class="na">target=</span><span class="s">"_blank"</span><span class="nt">&gt;</span>
+</code></pre></div></div>
+
+<hr />
+
+<h2 id="-development-workflow">🔧 Development Workflow</h2>
+
+<h3 id="making-changes">Making Changes</h3>
+
+<ol>
+  <li><strong>Start development server</strong>
+    <div class="language-bash highlighter-rouge"><div class="highlight"><pre class="highlight"><code>bundle <span class="nb">exec </span>jekyll serve
+</code></pre></div>    </div>
+  </li>
+  <li><strong>Edit files</strong> in your preferred editor
+    <ul>
+      <li>Content: <code class="language-plaintext highlighter-rouge">index.md</code>, <code class="language-plaintext highlighter-rouge">about.md</code></li>
+      <li>Styling: <code class="language-plaintext highlighter-rouge">assets/style.css</code></li>
+      <li>Layout: <code class="language-plaintext highlighter-rouge">_layouts/default.html</code></li>
+      <li>JavaScript: <code class="language-plaintext highlighter-rouge">assets/main.js</code></li>
+    </ul>
+  </li>
+  <li>
+    <p><strong>Preview changes</strong> at <code class="language-plaintext highlighter-rouge">http://localhost:4000/zexion/</code></p>
+  </li>
+  <li><strong>Test thoroughly</strong>
+    <ul>
+      <li>Check all pages</li>
+      <li>Test responsive design</li>
+      <li>Verify all links work</li>
+      <li>Test image lightbox functionality</li>
+    </ul>
+  </li>
+  <li><strong>Commit and push</strong>
+    <div class="language-bash highlighter-rouge"><div class="highlight"><pre class="highlight"><code>git add <span class="nb">.</span>
+git commit <span class="nt">-m</span> <span class="s2">"Description of changes"</span>
+git push origin main
+</code></pre></div>    </div>
+  </li>
+</ol>
+
+<h3 id="styling-guidelines">Styling Guidelines</h3>
+
+<p>The site uses a custom CSS framework with these key classes:</p>
+
+<ul>
+  <li><strong>Layout</strong>: <code class="language-plaintext highlighter-rouge">.home-page</code>, <code class="language-plaintext highlighter-rouge">.about-page</code>, <code class="language-plaintext highlighter-rouge">.content-section</code></li>
+  <li><strong>Components</strong>: <code class="language-plaintext highlighter-rouge">.game-card</code>, <code class="language-plaintext highlighter-rouge">.screenshot</code>, <code class="language-plaintext highlighter-rouge">.social-icon</code></li>
+  <li><strong>Typography</strong>: Uses custom ‘Xolonium’ font family</li>
+  <li><strong>Responsive</strong>: Mobile-first design with media queries</li>
+</ul>
+
+<h3 id="javascript-features">JavaScript Features</h3>
+
+<ul>
+  <li><strong>Lightbox</strong>: Click screenshots to view larger versions</li>
+  <li><strong>Responsive</strong>: Mobile-friendly interactions</li>
+  <li><strong>Accessibility</strong>: Keyboard navigation support</li>
+</ul>
+
+<hr />
+
+<h2 id="-troubleshooting">🐛 Troubleshooting</h2>
+
+<h3 id="common-issues">Common Issues</h3>
+
+<h4 id="command-not-found-bundle">“Command not found: bundle”</h4>
+<div class="language-bash highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="c"># Install bundler</span>
+gem <span class="nb">install </span>bundler
+
+<span class="c"># Then try again</span>
+bundle <span class="nb">install</span>
+</code></pre></div></div>
+
+<h4 id="could-not-locate-gemfile">“Could not locate Gemfile”</h4>
+<div class="language-bash highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="c"># Make sure you're in the project directory</span>
+<span class="nb">cd </span>zexion
+<span class="nb">ls</span> <span class="nt">-la</span>  <span class="c"># Should show Gemfile</span>
+</code></pre></div></div>
+
+<h4 id="port-4000-already-in-use">“Port 4000 already in use”</h4>
+<div class="language-bash highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="c"># Use a different port</span>
+bundle <span class="nb">exec </span>jekyll serve <span class="nt">--port</span> 4001
+</code></pre></div></div>
+
+<h4 id="images-not-loading">Images not loading</h4>
+<ul>
+  <li>Check file paths are correct</li>
+  <li>Ensure images are in <code class="language-plaintext highlighter-rouge">assets/</code> folder</li>
+  <li>Use <code class="language-plaintext highlighter-rouge">/zexion/assets/filename.png</code> format</li>
+  <li>Check file extensions match exactly</li>
+</ul>
+
+<h4 id="changes-not-appearing">Changes not appearing</h4>
+<ul>
+  <li>Restart the Jekyll server: <code class="language-plaintext highlighter-rouge">Ctrl+C</code> then <code class="language-plaintext highlighter-rouge">bundle exec jekyll serve</code></li>
+  <li>Clear browser cache: <code class="language-plaintext highlighter-rouge">Ctrl+F5</code></li>
+  <li>Check for syntax errors in your files</li>
+</ul>
+
+<h4 id="site-looks-broken">Site looks broken</h4>
+<ul>
+  <li>Don’t edit the <code class="language-plaintext highlighter-rouge">---</code> front matter sections</li>
+  <li>Don’t remove HTML tags</li>
+  <li>Check for unclosed HTML elements</li>
+  <li>Validate your Markdown syntax</li>
+</ul>
+
+<h3 id="getting-help">Getting Help</h3>
+
+<ol>
+  <li><strong>Check Jekyll documentation</strong>: <a href="https://jekyllrb.com/docs/">jekyllrb.com/docs</a></li>
+  <li><strong>GitHub Pages docs</strong>: <a href="https://docs.github.com/en/pages">docs.github.com/pages</a></li>
+  <li><strong>Ruby/Jekyll community</strong>: <a href="https://talk.jekyllrb.com/">talk.jekyllrb.com</a></li>
+</ol>
+
+<hr />
+
+<h2 id="-additional-resources">📚 Additional Resources</h2>
+
+<h3 id="jekyll-learning">Jekyll Learning</h3>
+<ul>
+  <li><a href="https://jekyllrb.com/docs/step-by-step/01-setup/">Jekyll Tutorial</a></li>
+  <li><a href="https://shopify.github.io/liquid/">Liquid Templating</a></li>
+  <li><a href="https://www.markdownguide.org/">Markdown Guide</a></li>
+</ul>
+
+<h3 id="web-development">Web Development</h3>
+<ul>
+  <li><a href="https://css-tricks.com/snippets/css/complete-guide-grid/">CSS Grid Guide</a></li>
+  <li><a href="https://web.dev/responsive-web-design-basics/">Responsive Design</a></li>
+  <li><a href="https://www.w3.org/WAI/WCAG21/quickref/">Accessibility Guidelines</a></li>
+</ul>
+
+<h3 id="tools">Tools</h3>
+<ul>
+  <li><strong>Image Optimization</strong>: <a href="https://tinypng.com/">TinyPNG</a></li>
+  <li><strong>Code Editor</strong>: <a href="https://code.visualstudio.com/">VS Code</a> with Jekyll extensions</li>
+  <li><strong>Git GUI</strong>: <a href="https://desktop.github.com/">GitHub Desktop</a></li>
+</ul>
+
+<hr />
+
+<h2 id="-project-goals">🎯 Project Goals</h2>
+
+<p>This website serves as:</p>
+<ul>
+  <li><strong>Company showcase</strong> for Gallant Leaf LLC</li>
+  <li><strong>Game marketing</strong> for Zexion</li>
+  <li><strong>Community hub</strong> with social media integration</li>
+  <li><strong>Steam integration</strong> for wishlist and sales</li>
+</ul>
+
+<h3 id="future-enhancements">Future Enhancements</h3>
+<ul>
+  <li>Blog/news section</li>
+  <li>Multiple game support</li>
+  <li>Newsletter signup</li>
+  <li>Contact form</li>
+  <li>Multi-language support</li>
+</ul>
+
+<hr />
+
+<p><strong>Last Updated</strong>: January 2025<br />
+<strong>Jekyll Version</strong>: 4.x<br />
+<strong>Ruby Version</strong>: 2.7+<br />
+<strong>Browser Support</strong>: Modern browsers (Chrome, Firefox, Safari, Edge)</p>
+
+
+  </div>
+
+</article>
+
+    <footer>
+      &copy; 2025 Zexion Website. All rights reserved.
+    </footer>
+  </main>
+
+  <div class="footer-steam">
+    <a href="https://store.steampowered.com/app/3392510/Zexion/" target="_blank">
+      <span>Wishlist Zexion on Steam!</span>
+      <img src="/zexion/assets/iconmonstr-steam-4-white.svg" alt="Steam" class="steam-logo">
+    </a>
+  </div>
+  <div id="lightbox" class="lightbox-overlay" aria-hidden="true">
+    <img id="lightbox-image" class="lightbox-image" alt="Zoomed screenshot" />
+  </div>
+  <script src="/zexion/assets/main.js"></script>
+</body>
+</html> 
