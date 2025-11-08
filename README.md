@@ -133,13 +133,6 @@ To change the game trailer video in `about.md`:
 <iframe src="https://www.youtube.com/embed/NEW_VIDEO_ID" ...></iframe>
 ```
 
-## 📱 Preview Your Changes
-
-After making changes:
-1. Wait 1-2 minutes for GitHub Pages to rebuild
-2. Visit your site: `https://0101kvmt.github.io/zexion/`
-3. Check both the homepage and about page
-
 ## ⚠️ Important Notes
 
 ### **Don't Edit These Files:**
@@ -175,22 +168,19 @@ After making changes:
 - Don't remove or change HTML tags
 - If you accidentally break something, you can revert changes in GitHub
 
-## 📞 Need Help?
 
-If you need assistance:
-1. Check this documentation first
-2. Contact your developer with specific questions
-3. Include screenshots of any issues you encounter
+### Manual Setup
+```bash
+# 1. Install Ruby (if not already installed)
+# 2. Install Bundler
+gem install bundler
 
-## 🎮 Current Game Information
+# 3. Install dependencies
+bundle install
 
-**Game:** Zexion  
-**Release Date:** March 21, 2025  
-**Price:** $19.99  
-**Steam Page:** https://store.steampowered.com/app/3392510/Zexion/  
-**Genre:** Action, Adventure, Metroidvania, Sci-fi
-
----
+# 4. Start development server
+bundle exec jekyll serve
+```
 
 **Last Updated:** January 2025  
 **Website Version:** 1.0 
