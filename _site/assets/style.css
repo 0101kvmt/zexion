@@ -750,6 +750,14 @@ body.lightbox-open {
   footer {
     margin-bottom: 70px;
   }
+  .update-text {
+    text-align: center;
+    margin-bottom: 20px;
+  }
+  .welcome-text {
+    text-align: center;
+    text-indent: 0;
+  }
 }
 
 @media (max-width: 800px) {
