@@ -8,7 +8,9 @@ permalink: /about/
 <div class="game-hero">
   <h1 class="game-title"><img src="{{ '/assets/titlevector.svg' | relative_url }}" alt="title-vector" /></h1>
   <div class="video-player">
-    <iframe width="100%" height="400" src="https://www.youtube.com/embed/Pg1V-UDYzv0" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+    <div class="video-wrapper">
+      <iframe src="https://www.youtube.com/embed/Pg1V-UDYzv0" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+    </div>
   </div>
 </div>
 
