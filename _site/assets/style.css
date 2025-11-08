@@ -626,13 +626,12 @@ img {
 footer {
   text-align: center;
   color: #888;
-  padding: 2rem 0 1rem 0;
   font-size: 0.95rem;
   font-family: 'Xolonium', 'Segoe UI', Arial, sans-serif;
 }
 
 .footer-steam {
-  position: fixed;
+  position: relative;
   left: 0;
   right: 0;
   bottom: 0;
