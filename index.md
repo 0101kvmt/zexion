@@ -4,11 +4,21 @@ title: Home
 ---
 <div class="home-page">
   <div class="social-icons">
-    <a href="https://bsky.app/profile/gallantleaf.bsky.social" class="social-icon facebook" target="_blank"><img src="{{ '/assets/bluesky-circle-color.svg' | relative_url }}" alt="game-screenshot-2" /></a>
-    <a href="https://x.com/GallantLeaf" target="_blank" class="social-icon twitter"><img src="{{ '/assets/iconmonstr-twitter-4-color.svg' | relative_url }}" alt="game-screenshot-2" /></a>
-    <a href="https://www.youtube.com/@GallantLeaf" class="social-icon youtube" target="_blank"><img src="{{ '/assets/iconmonstr-youtube-9-color.svg' | relative_url }}" alt="game-screenshot-2" /></a>
-    <a href="#" class="social-icon twitch" target="_blank"><img src="{{ '/assets/iconmonstr-twitch-4-color.svg' | relative_url }}" alt="game-screenshot-2" /></a>
-    <a href="#" class="social-icon discord" target="_blank"><img src="{{ '/assets/iconmonstr-discord-1-color.svg' | relative_url }}" alt="game-screenshot-2" /></a>
+    <a href="https://bsky.app/profile/gallantleaf.bsky.social" class="social-icon facebook" target="_blank">
+      <img src="{{ '/assets/bluesky-circle-color.svg' | relative_url }}" alt="game-screenshot-2" />
+    </a>
+    <a href="https://x.com/GallantLeaf" target="_blank" class="social-icon twitter">
+      <img src="{{ '/assets/iconmonstr-twitter-4-color.svg' | relative_url }}" alt="game-screenshot-2" />
+    </a>
+    <a href="https://www.youtube.com/@GallantLeaf" class="social-icon youtube" target="_blank">
+      <img src="{{ '/assets/iconmonstr-youtube-9-color.svg' | relative_url }}" alt="game-screenshot-2" />
+    </a>
+    <a href="#" class="social-icon twitch" target="_blank">
+      <img src="{{ '/assets/iconmonstr-twitch-4-color.svg' | relative_url }}" alt="game-screenshot-2" />
+    </a>
+    <a href="#" class="social-icon discord" target="_blank">
+      <img src="{{ '/assets/iconmonstr-discord-1-color.svg' | relative_url }}" alt="game-screenshot-2" />
+    </a>
   </div>
 
   <div class="company-logo">
@@ -38,4 +48,10 @@ title: Home
       </div>
     </div>
   </div> 
+    <div class="footer-steam">
+    <a href="https://store.steampowered.com/app/3392510/Zexion/" target="_blank">
+      <span>Wishlist Zexion on Steam!</span>
+      <img src="{{ '/assets/iconmonstr-steam-4-white.svg' | relative_url }}" alt="Steam" class="steam-logo">
+    </a>
+  </div>
 </div>

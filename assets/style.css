@@ -628,10 +628,11 @@ footer {
   color: #888;
   font-size: 0.95rem;
   font-family: 'Xolonium', 'Segoe UI', Arial, sans-serif;
+  margin-bottom: 50px;
 }
 
 .footer-steam {
-  position: relative;
+  position: fixed;
   left: 0;
   right: 0;
   bottom: 0;
@@ -673,6 +674,7 @@ footer {
   filter: brightness(0) invert(1); /* Makes Steam logo white */
 }
 
+
 @media (max-width: 900px) {
   main {
     padding: 1rem;
@@ -710,6 +712,9 @@ footer {
   .company-logo-img {
     width: 56%;
   }
+  footer {
+    margin-bottom: 50px;
+  }
 } 
 
 /* Lightbox */
@@ -739,4 +744,16 @@ footer {
 
 body.lightbox-open {
   overflow: hidden;
+}
+
+@media (max-width: 600px) {
+  footer {
+    margin-bottom: 70px;
+  }
+}
+
+@media (max-width: 800px) {
+  footer {
+    margin-bottom: 60px;
+  }
 }
