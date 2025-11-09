@@ -1,10 +1,8 @@
-# Zexion Website - Client Documentation
+# Gallant Leaf Website - Client Documentation
 
-Welcome to your Zexion website! This guide will help you edit content, upload images, and manage your site through GitHub.
+Welcome to your Galant Leaf website! This guide will help you edit content, upload images, and manage your site through GitHub.
 
 ## 🌐 Website Overview
-
-Your website is built with Jekyll and hosted on GitHub Pages at: **https://0101kvmt.github.io/zexion/**
 
 - **Homepage**: Company introduction, social media links, and game announcements
 - **About Page**: Detailed game information, trailer, screenshots, and features
@@ -182,5 +180,5 @@ bundle install
 bundle exec jekyll serve
 ```
 
-**Last Updated:** January 2025  
+**Last Updated:** November 2025  
 **Website Version:** 1.0 

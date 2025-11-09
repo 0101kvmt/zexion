@@ -42,7 +42,7 @@ if [ $? -eq 0 ]; then
     echo "   bundle exec jekyll serve"
     echo ""
     echo "2. Open your browser to:"
-    echo "   http://localhost:4000/zexion/"
+    echo "   http://localhost:4000/"
     echo ""
     echo "3. Start editing files:"
     echo "   - index.md (homepage)"
